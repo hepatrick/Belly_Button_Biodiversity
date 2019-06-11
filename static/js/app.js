@@ -23,7 +23,7 @@ function buildCharts(sample) {
 
   // @TODO: Use `d3.json` to fetch the sample data for the plots
   d3.json(`/samples/${sample}`).then(function(response) {
-    console.log(response);
+    //console.log(response);
   
   // @TODO: Build a Bubble Chart using the sample data
   const otu_ids = response.otu_ids;
@@ -38,7 +38,7 @@ function buildCharts(sample) {
     marker: {
       size: sample_values,
       color: otu_ids,
-      colorscale: 'Earth'
+      colorscale: 'Electric'
     }
   }];      
 
